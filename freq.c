@@ -33,8 +33,23 @@
 	int main(int argc, char *argv[]) {
 
 		/* 
-		 * Kontrola zadaných parametrù - <filename> zastupuje nazev souboru, ze ktereho nasledne nacteme info o vysilacich
+		 * Kontrola zadanÃ½ch parametrÃ¹ - <filename> zastupuje nazev souboru, ze ktereho nasledne nacteme info o vysilacich
 		 */
+		
+		
+		//	Tady je celkem easy metoda jak otevrit jakykoliv .txt soubor 
+		//	Muzes tam zmenit priponu v tom strcat a otevres jine souborove typy
+		//	Kdyztak napis kdybys neco potrebovala :D ale moc toho uz nezvladam :D C++ je lepsi (:
+
+		/*
+			char filename[128];
+			printf("Enter .txt file name\n");
+			scanf("%123s",filename);
+			strcat(filename,".txt");
+			FILE *f;
+			f=fopen(fname,"r");
+		
+		*/
 		if (argc == 2 && strstr(argv[ARGV_FILENAME], TYPE_FORMAT_TXT)){
 			char *filename = argv[ARGV_FILENAME];
 			
